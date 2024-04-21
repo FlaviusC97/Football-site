@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Football Tips</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="navbar">
+
+        <a href="#">
+            <div class="logo">
+                <img src="lgo.png" alt="Logo" id="logo">
+            </div>
+        </a>
+
+
+            <div class="menu">
+                <ul>
+                    <li><a href="#matches">Today Matches</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#reviews">Reviews</a></li>
+                </ul>
+            </div>
+
+            <div class="search">
+                <input class="srch" type="search" name="" placeholder="Type to text" id="search" >
+                <button class="btn" value="Go" onclick="search(document.getElementById('search').value)">Search</button>
+            </div>
+        </div>
+
+        <div class="content">
+            <h1>Soccer Statistics & <span>Tips</span></h1>
+            <p class="par">Check in for the best free football betting tips for today’s matches. <br>
+                Our football tips are made by industry experts, <br>
+                giving you the inside scoop on all the big matches</p>
+
+                 <button class="cn"><a href="#">Join Us</a></button>
+
+                 <div class="form">
+                    <h2>Login Here</h2>
+                    <input type="email" name="email" placeholder="Enter Email Here">
+                    <input type="password" name="" placeholder="Enter Passowrd Here">
+                    <button class="btnn"><a href="#">Login</a></button>
+
+                    <p class="link">Don't have an account <br>
+                    <a href="#">Sign up here</a></p>
+                    <p class="liw">Log in with</p>
+
+                    <div class="icons">
+                        <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+                        <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+                        <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+                        <a href="#"><ion-icon name="logo-google"></ion-icon></a>
+                        <a href="#"><ion-icon name="logo-skype"></ion-icon></a>
+                    </div>
+                 </div>
+        </div>
+    </div>
+
+    <!-- Today Matches -->
+    <section class="Today" id="matches">
+        <h1>Statistics for today</h1>
+
+        <div class="row">
+        <p>1. Cadiz has scored less than 1.5 goals in 16 of the last 18 La Liga matches.</p>
+        <p>2. Leicester have scored in the 1st half in 12 of their last 14 Championship matches.</p>
+        <p>3. Sporting have scored in the 1st half in 19 of their last 20 Primeira Liga matches.</p>
+        <p>4. Lens has scored in 8 matches in a row in the Ligue 1 tournament.</p>
+        <p>5. Inter have scored away from home in 23 matches in a row.</p>
+        <p>6. Atlético have taken less than 5.5 corners at home in 6 of their last 7 matches.</p>
+        <p>7. Borussia Dortmund have taken more than 4.5 corners at home in 7 of their last 8 matches.</p>
+        <p>8. PSV scores in the 1st half in 7 of the last 8 matches.</p>
+        </div>
+    
+    </section>
+
+
+    <!-- About -->
+    <section class="About2" id="about">
+        <h1>About Us</h1>
+
+        <div class="row">
+        <p>Welcome to Soccer Statistics & Tips, your ultimate destination for in-depth football statistics and analysis. <br>
+         At Soccer Statistics & Tips, we're passionate about the beautiful game and dedicated to providing fans, <br> 
+         analysts, and enthusiasts with comprehensive insights into the world of football.</p>
+        </div>
+
+    </section>
+
+
+    <!-- Contact -->
+    <section class="contact-form" id="contact">
+        <div class="form-container">
+            <h2>Contact Us</h2>
+            <form action="#" method="POST" id="contactForm">
+ 
+                <label for="name">Name: </label>
+                <input type="text" id="name" name="name" required>
+ 
+                <label for="email">Email: </label>
+                <input type="email" id="email" name="email" required>
+ 
+                <label for="phone">Phone: </label>
+                <input type="tel" id="phone" name="phone" oninput="validatePhoneInput(event)" maxlength="15">
+ 
+                <label for="message">Message: </label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+ 
+                <button type="submit" class="submit-button">Submit</button>
+            </form>
+            <div id="messageSentNotification" style="display: none;"><h3>Message was sent!</h3></div>
+        </div>
+    </section>
+
+
+    <!-- Reviews-->
+    <section class="review" id="reviews">
+
+        <h1 class="heading">Custumer's <span>review</span></h1>
+
+        <div class="box-container">
+
+            <div class="box">
+                <p>Very good tips!</p>
+                <img src="people1.jpg" class="user" alt="">
+                <h3>John Linton</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>"
+                    <i class="fas fa-star"></i>"
+                    <i class="fas fa-star"></i>"
+                    <i class="fas fa-star"></i>"
+                    <i class="fas fa-star-half-alt"></i>"
+                </div>
+            </div>
+
+            <div class="box">
+                <p>I like the tips very much, I make a lot of money!</p>
+                <img src="people2.jpg" class="user" alt="">
+                <h3>Thomas Harry</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>"
+                    <i class="fas fa-star"></i>"
+                    <i class="fas fa-star"></i>"
+                    <i class="fas fa-star"></i>"
+                    <i class="fas fa-star-half-alt"></i>"
+                </div>
+            </div>
+
+            <div class="box">
+                <p>This site are awesome!</p>
+                <img src="people3.jpg" class="user" alt="">
+                <h3>Erika Anna</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>"
+                    <i class="fas fa-star"></i>"
+                    <i class="fas fa-star"></i>"
+                    <i class="fas fa-star"></i>"
+                    <i class="fas fa-star-half-alt"></i>"
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- Footer section -->
+    <footer>
+        <p>
+          © 2024 Soccer Statistics & Tips. All rights reserved.
+        </p>
+    </footer>
+
+
+
+
+
+    
+    <script>
+        function validatePhoneInput(event) {
+          // Get the input value
+          var inputValue = event.target.value;
+    
+          // Remove any non-numeric characters
+          var numericValue = inputValue.replace(/\D/g, '');
+    
+          // Update the input value
+          event.target.value = numericValue;
+        }
+      </script>
+
+
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+          // Prevent form submission
+          event.preventDefault();
+    
+          // Get the message input field value
+          var message = document.getElementById('message').value;
+    
+          // Check if message is not empty
+          if (message.trim() !== '') {
+            // Show the message sent notification
+            document.getElementById('messageSentNotification').style.display = 'block';
+    
+            // Optional: You can reset the form after showing the notification
+            // document.getElementById('contactForm').reset();
+          }
+        });
+      </script>
+
+
+    <script>
+        // Get the logo element
+        var logo = document.getElementById('logo');
+    
+        // Add event listener to the logo for click event
+        logo.addEventListener('click', function() {
+          // Reload the page when the logo is clicked
+          location.reload();
+        });
+      </script>
+
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+</body>
+</html>
